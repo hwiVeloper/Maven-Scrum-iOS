@@ -27,6 +27,10 @@ class TabBarController : UITabBarController {
         let tabMy = self.tabBar.items![3]
         tabMy.title = "마이페이지"
         tabMy.image = FAKFontAwesome.userOIcon(withSize: 30).image(with: CGSize(width:30, height:30))
+        
+        let tabShare = self.tabBar.items![4]
+        tabShare.title = "나눔의장"
+        tabShare.image = FAKFontAwesome.shareAltIcon(withSize: 30).image(with: CGSize(width:30, height:30))
     }
     
     
@@ -42,6 +46,7 @@ class TabBarController : UITabBarController {
         let myPlan = storyboard.instantiateViewController(withIdentifier: "myPlan")
         let suggestion = storyboard.instantiateViewController(withIdentifier: "suggestion")
         let myPage = storyboard.instantiateViewController(withIdentifier: "myPage")
+        let share = storyboard.instantiateViewController(withIdentifier: "share")
         
         // all viewcontroller embedded navigationbar
         //        let nvToday = UINavigationController(rootViewController: everybodyToday)
@@ -49,7 +54,7 @@ class TabBarController : UITabBarController {
         // all viewcontroller navigationbar hidden
         //        nvToday.setNavigationBarHidden(true, animated: false)
         
-        tabbarcntrl.viewControllers = [everybodyToday, myPlan, suggestion, myPage]
+        tabbarcntrl.viewControllers = [everybodyToday, myPlan, suggestion, myPage, share]
         
         let tabbar = tabbarcntrl.tabBar
         //        tabbar.barTintColor = UIColor.black
@@ -79,6 +84,10 @@ class TabBarController : UITabBarController {
         let tabMy = tabbar.items![3]
         tabMy.title = "마이페이지"
         tabMy.image = FAKFontAwesome.userOIcon(withSize: 30).image(with: CGSize(width:30, height:30))
+        
+        let tabShare = tabBar.items![4]
+        tabShare.title = "나눔의장"
+        tabShare.image = FAKFontAwesome.shareAltIcon(withSize: 30).image(with: CGSize(width:30, height:30))
         
         return tabbarcntrl
     }

@@ -141,19 +141,4 @@ class PlanDetailController : UITableViewController {
             replyVC?.pvo = planInfo
         }
     }
-//    func getThumbnailImage(_ index : Int) -> UIImage {
-//        // 인자값으로 받은 인덱스를 기반으로 해당하는 배열 데이터를 읽어온다.
-//        let rvo = self.replyList[index]
-//        
-//        // 메모이제이션 : 저장된 이미지가 있으면 반환, 없으면 다운로드 후 반환
-//        if let savedImage = rvo.userImgView {
-//            return savedImage
-//        } else {
-//            let url: URL! = URL(string: rvo.userImg!)
-//            let imageData = try! Data(contentsOf: url)
-//            rvo.userImgView = UIImage(data: imageData)
-//            
-//            return rvo.userImgView!
-//        }
-//    }
 }
