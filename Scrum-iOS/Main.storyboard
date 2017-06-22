@@ -477,15 +477,20 @@
                             <rect key="frame" x="0.0" y="100" width="375" height="23"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="댓글이 없습니다" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joc-Jt-edD">
-                                    <rect key="frame" x="127" y="0.0" width="120" height="23"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="댓글이 없습니다" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joc-Jt-edD">
+                                    <rect key="frame" x="8" y="0.0" width="359" height="23"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="joc-Jt-edD" secondAttribute="trailing" constant="8" id="1oT-Qt-zZY"/>
+                                <constraint firstAttribute="bottom" secondItem="joc-Jt-edD" secondAttribute="bottom" id="5xr-9U-qC8"/>
+                                <constraint firstItem="joc-Jt-edD" firstAttribute="leading" secondItem="aSm-DI-Jkk" secondAttribute="leading" constant="8" id="GV1-Lp-uD4"/>
+                                <constraint firstItem="joc-Jt-edD" firstAttribute="top" secondItem="aSm-DI-Jkk" secondAttribute="top" id="w4h-y1-atw"/>
+                            </constraints>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="replyList" id="YfT-uq-LBB" customClass="ReplyCell" customModule="Scrum_iOS" customModuleProvider="target">
@@ -495,25 +500,38 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1h-pQ-X6s">
-                                            <rect key="frame" x="66" y="8" width="301" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1h-pQ-X6s">
+                                            <rect key="frame" x="66" y="11" width="301" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NMZ-Ow-wKU">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NMZ-Ow-wKU">
                                             <rect key="frame" x="8" y="8" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="D47-PO-oqw"/>
+                                                <constraint firstAttribute="height" constant="50" id="cbm-e0-rIf"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="댓글내용" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vk-7z-RMG">
-                                            <rect key="frame" x="66" y="37" width="301" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="댓글내용" textAlignment="justified" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vk-7z-RMG">
+                                            <rect key="frame" x="66" y="40" width="301" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="8vk-7z-RMG" firstAttribute="top" secondItem="B1h-pQ-X6s" secondAttribute="bottom" constant="8" id="27a-mB-ioJ"/>
+                                        <constraint firstItem="B1h-pQ-X6s" firstAttribute="leading" secondItem="NMZ-Ow-wKU" secondAttribute="trailing" constant="8" id="3cj-m8-NkP"/>
+                                        <constraint firstItem="8vk-7z-RMG" firstAttribute="trailing" secondItem="XKz-D0-X0L" secondAttribute="trailingMargin" id="3r0-2R-JCd"/>
+                                        <constraint firstItem="NMZ-Ow-wKU" firstAttribute="leading" secondItem="XKz-D0-X0L" secondAttribute="leadingMargin" id="GDp-wR-zJW"/>
+                                        <constraint firstItem="B1h-pQ-X6s" firstAttribute="trailing" secondItem="XKz-D0-X0L" secondAttribute="trailingMargin" id="Kfn-pR-fdB"/>
+                                        <constraint firstItem="B1h-pQ-X6s" firstAttribute="top" secondItem="XKz-D0-X0L" secondAttribute="topMargin" constant="3" id="N0N-qj-a29"/>
+                                        <constraint firstItem="8vk-7z-RMG" firstAttribute="leading" secondItem="NMZ-Ow-wKU" secondAttribute="trailing" constant="8" id="XcS-mV-UFf"/>
+                                        <constraint firstItem="NMZ-Ow-wKU" firstAttribute="top" secondItem="XKz-D0-X0L" secondAttribute="topMargin" id="aGV-9g-ziI"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="8vk-7z-RMG" secondAttribute="bottom" constant="5.5" id="lEH-35-Pl1"/>
+                                        <constraint firstItem="8vk-7z-RMG" firstAttribute="top" secondItem="B1h-pQ-X6s" secondAttribute="bottom" constant="8" id="yNH-9h-iCK"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <gestureRecognizers/>
                                 <connections>
@@ -524,6 +542,7 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="댓글" id="mQr-QX-2ii">
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="Rte-La-qA0"/>
                     </navigationItem>
@@ -533,7 +552,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pdl-Gf-wJu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1973.5999999999999" y="-463.71814092953525"/>
+            <point key="canvasLocation" x="1972" y="-464.6176911544228"/>
         </scene>
         <!--모두의오늘-->
         <scene sceneID="G4y-Jt-aQc">
@@ -541,7 +560,7 @@
                 <navigationController storyboardIdentifier="everybodyToday" id="QSe-I4-L8f" customClass="TodayController" customModule="Scrum_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="모두의오늘" id="jOt-fW-t6R"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="dx1-vO-boT">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dx1-vO-boT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -565,8 +584,8 @@
                         <segue destination="QSe-I4-L8f" kind="relationship" relationship="viewControllers" id="yTj-38-3V2"/>
                         <segue destination="NZZ-0o-7Vm" kind="relationship" relationship="viewControllers" id="CY1-z5-TrB"/>
                         <segue destination="bf6-QM-1sV" kind="relationship" relationship="viewControllers" id="Ytl-fz-qAy"/>
-                        <segue destination="Akr-ZW-Fm2" kind="relationship" relationship="viewControllers" id="Zdk-YO-acO"/>
                         <segue destination="eRV-yU-cH5" kind="relationship" relationship="viewControllers" id="ZaX-VV-Jtn"/>
+                        <segue destination="Akr-ZW-Fm2" kind="relationship" relationship="viewControllers" id="Zdk-YO-acO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ovL-r2-tIF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -575,6 +594,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="jhf-mM-PQa"/>
+        <segue reference="U2R-jd-ad8"/>
     </inferredMetricsTieBreakers>
 </document>

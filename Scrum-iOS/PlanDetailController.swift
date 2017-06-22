@@ -95,37 +95,6 @@ class PlanDetailController : UITableViewController {
                 
                 self.list.append(pdvo)
             }
-            
-//            for row in replies {
-//                let r = row as! NSDictionary
-//                
-//                let rvo = ReplyVO()
-//                
-//                rvo.replyLevel = (r["reply_level"] as! NSString).integerValue
-//                rvo.replyId = r["reply_id"] as? String
-//                rvo.userId = r["user_id"] as? String
-//                rvo.writeUser = r["write_user"] as? String
-//                rvo.planDate = r["plan_date"] as? String
-//                rvo.replyComment = r["reply_comment"] as? String
-//                rvo.replyTimestamp = r["reply_timestamp"] as? String
-//                rvo.upReplyId = r["up_reply_id"] as? String
-//                rvo.upReplyUser = r["up_reply_user"] as? String
-//                rvo.userName = r["user_name"] as? String
-//                rvo.userImg = r["user_img"] as? String
-//                
-//                // =====> 추가 코드 : 웹상 이미지를 읽어와서 저장
-//                let url: URL! = URL(string: rvo.userImg!)
-//                let imageData = try! Data(contentsOf: url)
-//                pvo.userImgView = UIImage(data: imageData)
-//                // <===== 이미지 읽기 끝
-//                
-//                // list 배열에 추가
-//                self.replyList.append(rvo)
-//            }
-//            
-//            let rCount = (apiDictionary["replyCount"] as? NSString)!.integerValue
-//            NSLog("댓글 개수 >>>>>> \(rCount)")
-            
         } catch {
             NSLog("Parse Error!")
         }

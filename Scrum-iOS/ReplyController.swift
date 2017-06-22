@@ -23,6 +23,12 @@ class ReplyController : UITableViewController {
     
     override func viewDidLoad() {
         callReplyAPI()
+        tableView.estimatedRowHeight = 72.0
+        tableView.rowHeight = UITableViewAutomaticDimension
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        tableView.reloadData()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -34,9 +40,7 @@ class ReplyController : UITableViewController {
         let rCell = tableView.dequeueReusableCell(withIdentifier: "replyList") as! ReplyCell
         
         rCell.replyUser.text = rRow.userName
-        
         rCell.replyContent.text = rRow.replyComment
-        rCell.replyContent.sizeToFit()
         
         // get image of reply user
         DispatchQueue.main.async(execute: {

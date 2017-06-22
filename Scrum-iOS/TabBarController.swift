@@ -14,23 +14,23 @@ class TabBarController : UITabBarController {
     override func viewDidLoad() {
         let tabToday = self.tabBar.items![0]
         tabToday.title = "모두의오늘" // tabbar title
-        tabToday.image = FAKFontAwesome.calendarIcon(withSize: 30).image(with: CGSize(width: 30, height:30))
+        tabToday.image = FAKFontAwesome.calendarIcon(withSize: 25).image(with: CGSize(width: 25, height:25))
         
         let tabPlan = self.tabBar.items![1]
         tabPlan.title = "나의 일정"
-        tabPlan.image = FAKFontAwesome.pencilIcon(withSize: 30).image(with: CGSize(width:30, height:30))
+        tabPlan.image = FAKFontAwesome.pencilIcon(withSize: 25).image(with: CGSize(width:25, height:25))
         
         let tabSuggestion = self.tabBar.items![2]
         tabSuggestion.title = "건의사항"
-        tabSuggestion.image = FAKFontAwesome.inboxIcon(withSize: 30).image(with: CGSize(width:30, height:30))
+        tabSuggestion.image = FAKFontAwesome.inboxIcon(withSize: 25).image(with: CGSize(width:25, height:25))
         
-        let tabMy = self.tabBar.items![3]
-        tabMy.title = "마이페이지"
-        tabMy.image = FAKFontAwesome.userOIcon(withSize: 30).image(with: CGSize(width:30, height:30))
-        
-        let tabShare = self.tabBar.items![4]
+        let tabShare = self.tabBar.items![3]
         tabShare.title = "나눔의장"
-        tabShare.image = FAKFontAwesome.shareAltIcon(withSize: 30).image(with: CGSize(width:30, height:30))
+        tabShare.image = FAKFontAwesome.shareAltIcon(withSize: 25).image(with: CGSize(width:25, height:25))
+        
+        let tabMy = self.tabBar.items![4]
+        tabMy.title = "마이페이지"
+        tabMy.image = FAKFontAwesome.userOIcon(withSize: 25).image(with: CGSize(width:25, height:25))
     }
     
     
@@ -71,23 +71,23 @@ class TabBarController : UITabBarController {
         
         let tabToday = tabbar.items![0]
         tabToday.title = "모두의오늘" // tabbar title
-        tabToday.image = FAKFontAwesome.calendarIcon(withSize: 30).image(with: CGSize(width: 30, height:30))
+        tabToday.image = FAKFontAwesome.calendarIcon(withSize: 25).image(with: CGSize(width: 25, height:25))
         
         let tabPlan = tabbar.items![1]
         tabPlan.title = "나의 일정"
-        tabPlan.image = FAKFontAwesome.pencilIcon(withSize: 30).image(with: CGSize(width:30, height:30))
+        tabPlan.image = FAKFontAwesome.pencilIcon(withSize: 25).image(with: CGSize(width:25, height:25))
         
         let tabSuggestion = tabbar.items![2]
         tabSuggestion.title = "건의사항"
-        tabSuggestion.image = FAKFontAwesome.inboxIcon(withSize: 30).image(with: CGSize(width:30, height:30))
+        tabSuggestion.image = FAKFontAwesome.inboxIcon(withSize: 25).image(with: CGSize(width:25, height:25))
         
         let tabMy = tabbar.items![3]
         tabMy.title = "마이페이지"
-        tabMy.image = FAKFontAwesome.userOIcon(withSize: 30).image(with: CGSize(width:30, height:30))
+        tabMy.image = FAKFontAwesome.userOIcon(withSize: 25).image(with: CGSize(width:25, height:25))
         
         let tabShare = tabBar.items![4]
         tabShare.title = "나눔의장"
-        tabShare.image = FAKFontAwesome.shareAltIcon(withSize: 30).image(with: CGSize(width:30, height:30))
+        tabShare.image = FAKFontAwesome.shareAltIcon(withSize: 25).image(with: CGSize(width:25, height:25))
         
         return tabbarcntrl
     }
