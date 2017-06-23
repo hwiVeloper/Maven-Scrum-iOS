@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-class MyPageController : UIViewController {
+class MyPageController : UITableViewController {
     
 }

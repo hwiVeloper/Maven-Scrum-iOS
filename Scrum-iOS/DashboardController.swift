@@ -120,8 +120,6 @@ class DashboardController : UITableViewController {
     func callPlanListAPI() {
         self.list.removeAll()
         
-        NSLog("===== START callPlanListAPI =====")
-        
         // API 호출을 위한 URI 생성
         let url = "http://api.mismaven.kr/plan/other/date/\(self.planDate.text!)"
         let apiURI : URL! = URL(string: url)
@@ -177,8 +175,6 @@ class DashboardController : UITableViewController {
         } catch {
             NSLog("Parse Error!")
         }
-        
-        NSLog("===== END callPlanListAPI =====")
     }
     
     func getThumbnailImage(_ index : Int) -> UIImage {

@@ -21,7 +21,7 @@ class LoadController : UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        sleep(2)
+//        sleep(2)
         
         // Override point for customization after application launch.
         let reachability = Reachability.init()
@@ -37,7 +37,7 @@ class LoadController : UIViewController {
         
         if (self.ud.string(forKey: "sessionId") != nil) {
             self.loadSpinner.stopAnimating()
-            NSLog("okay ===== \(self.ud.string(forKey: "sessionId") ?? "")")
+            NSLog("session ===== \(self.ud.string(forKey: "sessionId") ?? "")")
             self.performSegue(withIdentifier: "loadMain", sender: nil)
         } else {
             self.loadSpinner.stopAnimating()

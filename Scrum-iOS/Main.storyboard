@@ -46,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJB-gG-7Dh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2147" y="-1305"/>
+            <point key="canvasLocation" x="-2148" y="-1307"/>
         </scene>
         <!--Login Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -161,63 +161,60 @@
             <point key="canvasLocation" x="-1364" y="322"/>
         </scene>
         <!--마이페이지-->
-        <scene sceneID="oXD-jW-ulM">
+        <scene sceneID="ztR-PN-eNB">
             <objects>
-                <viewController storyboardIdentifier="myPage" id="Akr-ZW-Fm2" customClass="MyPageController" customModule="Scrum_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uRB-Ny-G4i"/>
-                        <viewControllerLayoutGuide type="bottom" id="wRA-h4-PN8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="lwi-pQ-epH">
+                <tableViewController id="DjS-fH-I4R" customClass="MyPageController" customModule="Scrum_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="hRG-b4-Xv1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="마이페이지" id="aQK-R3-Mby"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="k8v-IR-3xh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="DjS-fH-I4R" id="eII-YT-pcQ"/>
+                            <outlet property="delegate" destination="DjS-fH-I4R" id="HaP-q9-ZV2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="마이페이지" id="STi-AF-KZM"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TCZ-eI-vq0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-575" y="322"/>
+            <point key="canvasLocation" x="233" y="1078"/>
+        </scene>
+        <!--마이페이지-->
+        <scene sceneID="6uI-G1-HJ2">
+            <objects>
+                <navigationController storyboardIdentifier="myPage" id="chX-e1-Wo2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="마이페이지" id="VMY-XK-4dx"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7cQ-mm-6jm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DjS-fH-I4R" kind="relationship" relationship="rootViewController" id="QnD-tR-qtM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OLQ-LM-u3n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="233" y="322"/>
         </scene>
         <!--나눔의장-->
         <scene sceneID="lWE-qY-y22">
             <objects>
                 <viewController storyboardIdentifier="share" title="나눔의장" id="eRV-yU-cH5" customClass="ShareController" customModule="Scrum_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="JVo-Ij-h5g"/>
-                        <viewControllerLayoutGuide type="bottom" id="aXt-aT-Hu5"/>
+                        <viewControllerLayoutGuide type="top" id="n46-lc-Ynp"/>
+                        <viewControllerLayoutGuide type="bottom" id="KvU-wM-JSc"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0lc-wN-G0h">
+                    <view key="view" contentMode="scaleToFill" id="Do5-Xo-Orl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="나눔의장" id="Mkc-EW-Q8F"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pfW-OD-L58" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="233" y="322"/>
-        </scene>
-        <!--건의사항-->
-        <scene sceneID="h3r-at-lP9">
-            <objects>
-                <viewController storyboardIdentifier="suggestion" id="bf6-QM-1sV" customClass="SuggestionController" customModule="Scrum_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zhw-Lj-mi3"/>
-                        <viewControllerLayoutGuide type="bottom" id="MJK-WE-oAm"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="piq-L8-4j6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="건의사항" id="GYO-gY-sAH"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AXu-Js-rDp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-576" y="-1306"/>
+            <point key="canvasLocation" x="-577" y="322"/>
         </scene>
         <!--모두의 오늘-->
         <scene sceneID="Dhi-pi-c5w">
@@ -365,7 +362,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bFV-P7-EsG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="233" y="-466"/>
+            <point key="canvasLocation" x="232.80000000000001" y="-466.41679160419795"/>
         </scene>
         <!--날짜 / 이름-->
         <scene sceneID="A17-vE-z4B">
@@ -554,6 +551,79 @@
             </objects>
             <point key="canvasLocation" x="1972" y="-464.6176911544228"/>
         </scene>
+        <!--건의사항-->
+        <scene sceneID="EUW-Af-nyj">
+            <objects>
+                <tableViewController id="WFZ-Bu-JWY" customClass="SuggestionController" customModule="Scrum_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="X8Y-OX-Hzc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="80" id="bvh-wh-j13" customClass="SuggestionCell" customModule="Scrum_iOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bvh-wh-j13" id="Qnb-H2-NgW">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="79.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Kg-Dh-isC">
+                                            <rect key="frame" x="8" y="8" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFH-Zj-eZn">
+                                            <rect key="frame" x="66" y="37" width="276" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHH-NB-GCO">
+                                            <rect key="frame" x="66" y="8" width="276" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="suggestionContent" destination="MFH-Zj-eZn" id="NGq-6k-jqj"/>
+                                    <outlet property="userImg" destination="4Kg-Dh-isC" id="VNj-6f-OcN"/>
+                                    <outlet property="userName" destination="OHH-NB-GCO" id="uIp-CA-lnK"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="WFZ-Bu-JWY" id="7wb-No-MMV"/>
+                            <outlet property="delegate" destination="WFZ-Bu-JWY" id="3ZM-7q-87p"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="건의사항" id="uhi-Hu-NfN">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="5z8-Xq-60r"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="usy-Jk-Kb8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="232.80000000000001" y="-1307.4962518740631"/>
+        </scene>
+        <!--건의사항-->
+        <scene sceneID="bnY-Ul-Mqm">
+            <objects>
+                <navigationController id="TSt-ZP-twu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="건의사항" id="4dE-cL-P7b"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Eoi-3v-kXt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WFZ-Bu-JWY" kind="relationship" relationship="rootViewController" id="GqQ-bx-m3D"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vuP-uy-eHW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-575" y="-1307"/>
+        </scene>
         <!--모두의오늘-->
         <scene sceneID="G4y-Jt-aQc">
             <objects>
@@ -583,9 +653,9 @@
                     <connections>
                         <segue destination="QSe-I4-L8f" kind="relationship" relationship="viewControllers" id="yTj-38-3V2"/>
                         <segue destination="NZZ-0o-7Vm" kind="relationship" relationship="viewControllers" id="CY1-z5-TrB"/>
-                        <segue destination="bf6-QM-1sV" kind="relationship" relationship="viewControllers" id="Ytl-fz-qAy"/>
+                        <segue destination="TSt-ZP-twu" kind="relationship" relationship="viewControllers" id="HOD-1a-8qs"/>
                         <segue destination="eRV-yU-cH5" kind="relationship" relationship="viewControllers" id="ZaX-VV-Jtn"/>
-                        <segue destination="Akr-ZW-Fm2" kind="relationship" relationship="viewControllers" id="Zdk-YO-acO"/>
+                        <segue destination="chX-e1-Wo2" kind="relationship" relationship="viewControllers" id="WF2-NY-1GT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ovL-r2-tIF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -594,6 +664,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="U2R-jd-ad8"/>
+        <segue reference="jhf-mM-PQa"/>
     </inferredMetricsTieBreakers>
 </document>

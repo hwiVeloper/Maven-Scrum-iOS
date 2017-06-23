@@ -30,7 +30,7 @@ class TabBarController : UITabBarController {
         
         let tabMy = self.tabBar.items![4]
         tabMy.title = "마이페이지"
-        tabMy.image = FAKFontAwesome.userOIcon(withSize: 25).image(with: CGSize(width:25, height:25))
+        tabMy.image = FAKFontAwesome.cogIcon(withSize: 25).image(with: CGSize(width:25, height:25))
     }
     
     

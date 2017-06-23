@@ -20,6 +20,8 @@
 		E548CA8E1EFA4960006DBC77 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E548CA8D1EFA4960006DBC77 /* TabBarController.swift */; };
 		E548CA901EFA5E7E006DBC77 /* ReplyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E548CA8F1EFA5E7E006DBC77 /* ReplyController.swift */; };
 		E548CA931EFB6275006DBC77 /* ShareController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E548CA921EFB6275006DBC77 /* ShareController.swift */; };
+		E548CA951EFCFA64006DBC77 /* SuggestionVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E548CA941EFCFA64006DBC77 /* SuggestionVO.swift */; };
+		E548CA971EFCFA7F006DBC77 /* SuggestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E548CA961EFCFA7F006DBC77 /* SuggestionCell.swift */; };
 		E5623CE41EF3AB610014319B /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = E5623CAB1EF3AB610014319B /* Contents.json */; };
 		E5623D0C1EF3AE630014319B /* icons8-Calendar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5623D081EF3AE630014319B /* icons8-Calendar@3x.png */; };
 		E5623D0D1EF3AE630014319B /* icons8-Pencil@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5623D091EF3AE630014319B /* icons8-Pencil@3x.png */; };
@@ -57,6 +59,8 @@
 		E548CA8D1EFA4960006DBC77 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E548CA8F1EFA5E7E006DBC77 /* ReplyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyController.swift; sourceTree = "<group>"; };
 		E548CA921EFB6275006DBC77 /* ShareController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareController.swift; sourceTree = "<group>"; };
+		E548CA941EFCFA64006DBC77 /* SuggestionVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionVO.swift; sourceTree = "<group>"; };
+		E548CA961EFCFA7F006DBC77 /* SuggestionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionCell.swift; sourceTree = "<group>"; };
 		E5623CAB1EF3AB610014319B /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		E5623CC51EF3AB610014319B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E5623D081EF3AE630014319B /* icons8-Calendar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-Calendar@3x.png"; path = "maven/icons8-Calendar@3x.png"; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 				E5623D131EF3B2BD0014319B /* PlanVO.swift */,
 				E548CA7B1EF8F360006DBC77 /* PlanDetailVO.swift */,
 				E548CA7D1EF8F412006DBC77 /* ReplyVO.swift */,
+				E548CA941EFCFA64006DBC77 /* SuggestionVO.swift */,
 			);
 			name = ValueObject;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 				E5623D121EF3B2BD0014319B /* PlanCell.swift */,
 				E548CA7F1EF8FCD8006DBC77 /* PlanDetailCell.swift */,
 				E548CA811EF90D22006DBC77 /* ReplyCell.swift */,
+				E548CA961EFCFA7F006DBC77 /* SuggestionCell.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -363,6 +369,7 @@
 				E570BFDE1EF243DC00C7B070 /* DashboardController.swift in Sources */,
 				E570BFB61EF2435D00C7B070 /* ViewController.swift in Sources */,
 				E548CA861EFA3863006DBC77 /* TodayController.swift in Sources */,
+				E548CA971EFCFA7F006DBC77 /* SuggestionCell.swift in Sources */,
 				E548CA821EF90D22006DBC77 /* ReplyCell.swift in Sources */,
 				E5623D151EF3B2BD0014319B /* PlanVO.swift in Sources */,
 				E548CA7E1EF8F412006DBC77 /* ReplyVO.swift in Sources */,
@@ -370,6 +377,7 @@
 				E548CA8C1EFA3AA7006DBC77 /* MyPlanController.swift in Sources */,
 				E548CA901EFA5E7E006DBC77 /* ReplyController.swift in Sources */,
 				E5623D141EF3B2BD0014319B /* PlanCell.swift in Sources */,
+				E548CA951EFCFA64006DBC77 /* SuggestionVO.swift in Sources */,
 				E548CA7C1EF8F360006DBC77 /* PlanDetailVO.swift in Sources */,
 				E570BFDD1EF243DC00C7B070 /* LoginController.swift in Sources */,
 				E548CA8A1EFA3A90006DBC77 /* MyPageController.swift in Sources */,
