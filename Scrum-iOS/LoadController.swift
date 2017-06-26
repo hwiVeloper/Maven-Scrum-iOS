@@ -35,6 +35,8 @@ class LoadController : UIViewController {
             }))
         }
         
+        NSLog("네트워크 연결 확인.")
+        
         if (self.ud.string(forKey: "sessionId") != nil) {
             self.loadSpinner.stopAnimating()
             NSLog("session ===== \(self.ud.string(forKey: "sessionId") ?? "")")

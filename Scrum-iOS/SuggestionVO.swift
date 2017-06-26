@@ -18,11 +18,11 @@ class SuggestionVO {
     
     var suggestionTimestamp : String?
     
-    var suggestionComplete : Bool?
+    var suggestionComplete : String?
     
     var userName : String?
     
     var userImg : String?
     
-    var userImgView : String?
+    var userImgView : UIImage?
 }

@@ -124,6 +124,14 @@
 			name = EverybodyToday;
 			sourceTree = "<group>";
 		};
+		E548CA991EFEBEF5006DBC77 /* Suggestion */ = {
+			isa = PBXGroup;
+			children = (
+				E548CA871EFA3A74006DBC77 /* SuggestionController.swift */,
+			);
+			name = Suggestion;
+			sourceTree = "<group>";
+		};
 		E5623C8D1EF3AB610014319B /* maven */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,10 +219,10 @@
 		E570BFDA1EF243D100C7B070 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E548CA991EFEBEF5006DBC77 /* Suggestion */,
 				E548CA911EFA5E89006DBC77 /* EverybodyToday */,
 				E570BFDB1EF243DC00C7B070 /* LoginController.swift */,
 				E53B9EB91EF261F00049378D /* LoadController.swift */,
-				E548CA871EFA3A74006DBC77 /* SuggestionController.swift */,
 				E548CA891EFA3A90006DBC77 /* MyPageController.swift */,
 				E548CA8B1EFA3AA7006DBC77 /* MyPlanController.swift */,
 				E548CA8D1EFA4960006DBC77 /* TabBarController.swift */,

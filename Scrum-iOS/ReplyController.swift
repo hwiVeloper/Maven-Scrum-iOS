@@ -51,14 +51,14 @@ class ReplyController : UITableViewController {
         return rCell
     }
     
-    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        
-        let deleteRowAction = UITableViewRowAction(style: UITableViewRowActionStyle.default, title: "Delete", handler:{action, indexpath in
-            print("DELETE•ACTION");
-        });
-        
-        return [deleteRowAction];
-    }
+//    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+//        
+//        let deleteRowAction = UITableViewRowAction(style: UITableViewRowActionStyle.default, title: "Delete", handler:{action, indexpath in
+//            print("DELETE•ACTION");
+//        });
+//        
+//        return [deleteRowAction];
+//    }
     
     func callReplyAPI() {
         self.replyList.removeAll()
