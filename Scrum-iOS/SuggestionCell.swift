@@ -13,5 +13,6 @@ class SuggestionCell : UITableViewCell {
     @IBOutlet var userImg: UIImageView!
     @IBOutlet var userName: UILabel!
     @IBOutlet var suggestionContent: UILabel!
+    @IBOutlet var suggestionComplete: UIImageView!
     
 }

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import FontAwesomeKit
 
 class SuggestionController : UITableViewController {
     
@@ -28,7 +29,8 @@ class SuggestionController : UITableViewController {
         tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         self.aiv = activityIndicatorView
         tableView.addSubview(self.aiv)
-
+        
+        self.aiv.startAnimating()
         
         // 당겨서 새로고침 추가
         refresher = UIRefreshControl()
@@ -37,8 +39,7 @@ class SuggestionController : UITableViewController {
         tableView.addSubview(refresher)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        self.aiv.startAnimating()
+    override func viewDidLoad() {
         
         OperationQueue.main.addOperation() {
             self.aiv.stopAnimating()
@@ -72,8 +73,25 @@ class SuggestionController : UITableViewController {
             cell.userImg.clipsToBounds = true
         })
         
+        // FAK check / uncheck icons
+        let checkIcon = FAKFontAwesome.checkCircleOIcon(withSize: 25)
+        checkIcon?.addAttribute(NSForegroundColorAttributeName, value: UIColor(red:0.00, green:0.79, blue:0.33, alpha:1.0))
+        let checkIconImage = checkIcon?.image(with: CGSize(width: 25, height: 25))
+        
+        let uncheckIcon = FAKFontAwesome.exclamationIcon(withSize: 25)
+        uncheckIcon?.addAttribute(NSForegroundColorAttributeName, value: UIColor(red:0.86, green:0.07, blue:0.07, alpha:1.0))
+        let uncheckIconImage = uncheckIcon?.image(with: CGSize(width: 25, height: 25))
+        
+        if row.suggestionComplete == "1" {
+            cell.suggestionComplete.image = checkIconImage
+        } else {
+            cell.suggestionComplete.image = uncheckIconImage
+        }
+        
         return cell
     }
+    
+    
     
     func callSuggestionAPI() {
         self.sList.removeAll()
@@ -116,8 +134,8 @@ class SuggestionController : UITableViewController {
     
     func refreshData() {
         callSuggestionAPI()
-        tableView.reloadData()
         refresher.endRefreshing()
+        tableView.reloadData()
     }
     
     func getThumbnailImage(_ index : Int) -> UIImage {

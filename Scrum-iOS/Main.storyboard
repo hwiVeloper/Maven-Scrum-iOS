@@ -142,23 +142,31 @@
             <point key="canvasLocation" x="-2147" y="-466"/>
         </scene>
         <!--나의 일정-->
-        <scene sceneID="MAc-52-IS6">
+        <scene sceneID="31r-FY-y6G">
             <objects>
-                <viewController storyboardIdentifier="myPlan" id="NZZ-0o-7Vm" customClass="MyPlanController" customModule="Scrum_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="LoA-Fb-1yC"/>
-                        <viewControllerLayoutGuide type="bottom" id="heF-US-XWq"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="WBW-cN-ndZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="나의 일정" id="HPV-4p-CxF"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="42y-DH-OXs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="x3e-cS-Uhs" customClass="MyPlanController" customModule="Scrum_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="나의 일정" id="RQT-rN-0n2"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ss-nv-1Ay" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1364" y="322"/>
+            <point key="canvasLocation" x="-2148" y="1077"/>
+        </scene>
+        <!--나의 일정-->
+        <scene sceneID="1jv-tK-nIb">
+            <objects>
+                <navigationController id="2ty-IJ-87e" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="나의 일정" id="BZh-Rb-IM7"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ZdE-gs-iMy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="x3e-cS-Uhs" kind="relationship" relationship="rootViewController" id="QBE-mu-Va0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0VQ-HL-X4V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2148" y="322"/>
         </scene>
         <!--마이페이지-->
         <scene sceneID="ztR-PN-eNB">
@@ -168,7 +176,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <sections/>
+                        <sections>
+                            <tableViewSection headerTitle="프로필" id="pNB-N4-0mO">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="profile" id="kcZ-zt-62X">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kcZ-zt-62X" id="a3Q-9a-rEt">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Bwh-3q-fXQ" kind="showDetail" identifier="segueProfile" id="cbQ-2y-jOY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
                         <connections>
                             <outlet property="dataSource" destination="DjS-fH-I4R" id="eII-YT-pcQ"/>
                             <outlet property="delegate" destination="DjS-fH-I4R" id="HaP-q9-ZV2"/>
@@ -178,7 +202,100 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TCZ-eI-vq0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="233" y="1078"/>
+            <point key="canvasLocation" x="-575" y="1076"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="G1m-Jy-Cb9">
+            <objects>
+                <viewController id="Bwh-3q-fXQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MTX-6L-Q6T"/>
+                        <viewControllerLayoutGuide type="bottom" id="TuD-Mk-8h3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hDD-yF-3O3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5BZ-0a-1SL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="233" y="1075"/>
+        </scene>
+        <!--나눔의장-->
+        <scene sceneID="83o-ch-d5M">
+            <objects>
+                <tableViewController id="GQh-rs-E23" customClass="ShareController" customModule="Scrum_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="B0H-yH-wlm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="UP4-0w-tHr">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jba-Xy-99U">
+                                    <rect key="frame" x="304" y="5" width="63" height="34"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <state key="normal" title="회차선택"/>
+                                    <connections>
+                                        <action selector="seqPicker:" destination="GQh-rs-E23" eventType="touchUpInside" id="thI-ji-ePn"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="선택된 회차" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2z-ty-aZ7">
+                                    <rect key="frame" x="8" y="10" width="299" height="24"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="shareList" id="85D-Mp-ELj">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="85D-Mp-ELj" id="0ct-iY-vMC">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="GQh-rs-E23" id="aJX-wH-zqe"/>
+                            <outlet property="delegate" destination="GQh-rs-E23" id="hHe-ZW-H0x"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="나눔의장" id="v3H-CQ-yvn">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="gUG-yY-mIR"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnSelectSeq" destination="jba-Xy-99U" id="rS2-n3-3Hz"/>
+                        <outlet property="selectedSeq" destination="J2z-ty-aZ7" id="qNF-Ic-JvF"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZAI-Da-FcT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1364" y="1075.4122938530736"/>
+        </scene>
+        <!--나눔의장-->
+        <scene sceneID="xnA-hx-qHu">
+            <objects>
+                <navigationController id="eRU-xI-kuj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="나눔의장" id="ZhO-E4-6Hg"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="cyP-QW-wOI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GQh-rs-E23" kind="relationship" relationship="rootViewController" id="kM9-K6-VdW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mY2-Iz-fo9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1364" y="322"/>
         </scene>
         <!--마이페이지-->
         <scene sceneID="6uI-G1-HJ2">
@@ -195,26 +312,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OLQ-LM-u3n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="233" y="322"/>
-        </scene>
-        <!--나눔의장-->
-        <scene sceneID="lWE-qY-y22">
-            <objects>
-                <viewController storyboardIdentifier="share" title="나눔의장" id="eRV-yU-cH5" customClass="ShareController" customModule="Scrum_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="n46-lc-Ynp"/>
-                        <viewControllerLayoutGuide type="bottom" id="KvU-wM-JSc"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Do5-Xo-Orl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="나눔의장" id="Mkc-EW-Q8F"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pfW-OD-L58" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-577" y="322"/>
+            <point key="canvasLocation" x="-575" y="322"/>
         </scene>
         <!--모두의 오늘-->
         <scene sceneID="Dhi-pi-c5w">
@@ -560,11 +658,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="suggestionList" id="bvh-wh-j13" customClass="SuggestionCell" customModule="Scrum_iOS" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="suggestionList" id="bvh-wh-j13" customClass="SuggestionCell" customModule="Scrum_iOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bvh-wh-j13" id="Qnb-H2-NgW">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="69.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Kg-Dh-isC">
@@ -574,32 +672,41 @@
                                                 <constraint firstAttribute="width" constant="50" id="fbc-h4-BMf"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHH-NB-GCO">
-                                            <rect key="frame" x="66" y="12" width="276" height="22"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFH-Zj-eZn">
-                                            <rect key="frame" x="66" y="41" width="276" height="18"/>
+                                            <rect key="frame" x="66" y="41" width="309" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHH-NB-GCO">
+                                            <rect key="frame" x="66" y="12" width="268" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7pN-uP-5zJ">
+                                            <rect key="frame" x="342" y="11" width="25" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="25" id="ygo-JZ-DQn"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="leadingMargin" secondItem="4Kg-Dh-isC" secondAttribute="leading" id="5eq-BK-0dy"/>
-                                        <constraint firstItem="OHH-NB-GCO" firstAttribute="top" secondItem="Qnb-H2-NgW" secondAttribute="top" constant="12" id="9Fk-aO-1bI"/>
-                                        <constraint firstItem="OHH-NB-GCO" firstAttribute="leading" secondItem="4Kg-Dh-isC" secondAttribute="trailing" constant="8" id="CXp-pX-lxm"/>
-                                        <constraint firstItem="MFH-Zj-eZn" firstAttribute="leading" secondItem="4Kg-Dh-isC" secondAttribute="trailing" constant="8" id="Dvu-mR-cWW"/>
-                                        <constraint firstAttribute="trailing" secondItem="OHH-NB-GCO" secondAttribute="trailing" id="E1d-Bh-QUy"/>
-                                        <constraint firstItem="4Kg-Dh-isC" firstAttribute="top" secondItem="Qnb-H2-NgW" secondAttribute="topMargin" constant="1" id="gpQ-bM-TPo"/>
-                                        <constraint firstAttribute="trailing" secondItem="MFH-Zj-eZn" secondAttribute="trailing" id="qj6-sv-j47"/>
-                                        <constraint firstAttribute="bottom" secondItem="MFH-Zj-eZn" secondAttribute="bottom" constant="10.5" id="sD6-wD-XkO"/>
-                                        <constraint firstItem="MFH-Zj-eZn" firstAttribute="top" secondItem="OHH-NB-GCO" secondAttribute="bottom" constant="7" id="vSf-IT-dR9"/>
+                                        <constraint firstItem="OHH-NB-GCO" firstAttribute="top" secondItem="Qnb-H2-NgW" secondAttribute="topMargin" constant="4" id="1hW-h1-tlM"/>
+                                        <constraint firstAttribute="bottom" secondItem="MFH-Zj-eZn" secondAttribute="bottom" constant="10.5" id="DRp-0X-hkh"/>
+                                        <constraint firstAttribute="trailing" secondItem="MFH-Zj-eZn" secondAttribute="trailing" id="HRF-BY-QRU"/>
+                                        <constraint firstItem="7pN-uP-5zJ" firstAttribute="leading" secondItem="OHH-NB-GCO" secondAttribute="trailing" constant="8" symbolic="YES" id="HSe-zv-PoN"/>
+                                        <constraint firstItem="4Kg-Dh-isC" firstAttribute="top" secondItem="Qnb-H2-NgW" secondAttribute="topMargin" constant="1" id="KkS-xE-d5X"/>
+                                        <constraint firstItem="MFH-Zj-eZn" firstAttribute="top" secondItem="7pN-uP-5zJ" secondAttribute="bottom" constant="5" id="Pxp-ij-lwU"/>
+                                        <constraint firstItem="7pN-uP-5zJ" firstAttribute="trailing" secondItem="Qnb-H2-NgW" secondAttribute="trailingMargin" id="SfT-r9-DOG"/>
+                                        <constraint firstItem="MFH-Zj-eZn" firstAttribute="leading" secondItem="4Kg-Dh-isC" secondAttribute="trailing" constant="8" id="cC8-fF-vXe"/>
+                                        <constraint firstItem="7pN-uP-5zJ" firstAttribute="centerY" secondItem="OHH-NB-GCO" secondAttribute="centerY" id="cYS-gz-Y5l"/>
+                                        <constraint firstItem="OHH-NB-GCO" firstAttribute="leading" secondItem="4Kg-Dh-isC" secondAttribute="trailing" constant="8" id="dhL-Z3-PWL"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="4Kg-Dh-isC" secondAttribute="leading" id="eML-Ps-v1u"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="suggestionComplete" destination="7pN-uP-5zJ" id="FQc-al-yjf"/>
                                     <outlet property="suggestionContent" destination="MFH-Zj-eZn" id="NGq-6k-jqj"/>
                                     <outlet property="userImg" destination="4Kg-Dh-isC" id="VNj-6f-OcN"/>
                                     <outlet property="userName" destination="OHH-NB-GCO" id="uIp-CA-lnK"/>
@@ -664,9 +771,9 @@
                     </tabBar>
                     <connections>
                         <segue destination="QSe-I4-L8f" kind="relationship" relationship="viewControllers" id="yTj-38-3V2"/>
-                        <segue destination="NZZ-0o-7Vm" kind="relationship" relationship="viewControllers" id="CY1-z5-TrB"/>
+                        <segue destination="2ty-IJ-87e" kind="relationship" relationship="viewControllers" id="dZ6-qU-x4l"/>
                         <segue destination="TSt-ZP-twu" kind="relationship" relationship="viewControllers" id="HOD-1a-8qs"/>
-                        <segue destination="eRV-yU-cH5" kind="relationship" relationship="viewControllers" id="ZaX-VV-Jtn"/>
+                        <segue destination="eRU-xI-kuj" kind="relationship" relationship="viewControllers" id="VjH-xY-AHa"/>
                         <segue destination="chX-e1-Wo2" kind="relationship" relationship="viewControllers" id="WF2-NY-1GT"/>
                     </connections>
                 </tabBarController>
@@ -676,6 +783,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="jhf-mM-PQa"/>
+        <segue reference="U2R-jd-ad8"/>
     </inferredMetricsTieBreakers>
 </document>

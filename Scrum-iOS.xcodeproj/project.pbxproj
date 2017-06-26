@@ -23,13 +23,8 @@
 		E548CA951EFCFA64006DBC77 /* SuggestionVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E548CA941EFCFA64006DBC77 /* SuggestionVO.swift */; };
 		E548CA971EFCFA7F006DBC77 /* SuggestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E548CA961EFCFA7F006DBC77 /* SuggestionCell.swift */; };
 		E5623CE41EF3AB610014319B /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = E5623CAB1EF3AB610014319B /* Contents.json */; };
-		E5623D0C1EF3AE630014319B /* icons8-Calendar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5623D081EF3AE630014319B /* icons8-Calendar@3x.png */; };
-		E5623D0D1EF3AE630014319B /* icons8-Pencil@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5623D091EF3AE630014319B /* icons8-Pencil@3x.png */; };
-		E5623D0E1EF3AE630014319B /* icons8-Topic Moved@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5623D0A1EF3AE630014319B /* icons8-Topic Moved@3x.png */; };
-		E5623D0F1EF3AE630014319B /* icons8-User@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5623D0B1EF3AE630014319B /* icons8-User@3x.png */; };
 		E5623D141EF3B2BD0014319B /* PlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5623D121EF3B2BD0014319B /* PlanCell.swift */; };
 		E5623D151EF3B2BD0014319B /* PlanVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5623D131EF3B2BD0014319B /* PlanVO.swift */; };
-		E5623D171EF3BA330014319B /* icons8-Response@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5623D161EF3BA330014319B /* icons8-Response@3x.png */; };
 		E570B4D11EF79489006C863E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52481751EF792320034EAF3 /* SystemConfiguration.framework */; };
 		E570B4D31EF7C24B006C863E /* PlanDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570B4D21EF7C24B006C863E /* PlanDetailController.swift */; };
 		E570BFB41EF2435D00C7B070 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570BFB31EF2435D00C7B070 /* AppDelegate.swift */; };
@@ -63,13 +58,8 @@
 		E548CA961EFCFA7F006DBC77 /* SuggestionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionCell.swift; sourceTree = "<group>"; };
 		E5623CAB1EF3AB610014319B /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		E5623CC51EF3AB610014319B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E5623D081EF3AE630014319B /* icons8-Calendar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-Calendar@3x.png"; path = "maven/icons8-Calendar@3x.png"; sourceTree = "<group>"; };
-		E5623D091EF3AE630014319B /* icons8-Pencil@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-Pencil@3x.png"; path = "maven/icons8-Pencil@3x.png"; sourceTree = "<group>"; };
-		E5623D0A1EF3AE630014319B /* icons8-Topic Moved@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-Topic Moved@3x.png"; path = "maven/icons8-Topic Moved@3x.png"; sourceTree = "<group>"; };
-		E5623D0B1EF3AE630014319B /* icons8-User@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-User@3x.png"; path = "maven/icons8-User@3x.png"; sourceTree = "<group>"; };
 		E5623D121EF3B2BD0014319B /* PlanCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanCell.swift; sourceTree = "<group>"; };
 		E5623D131EF3B2BD0014319B /* PlanVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanVO.swift; sourceTree = "<group>"; };
-		E5623D161EF3BA330014319B /* icons8-Response@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-Response@3x.png"; sourceTree = "<group>"; };
 		E570B4D21EF7C24B006C863E /* PlanDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanDetailController.swift; sourceTree = "<group>"; };
 		E570BFB01EF2435D00C7B070 /* Scrum-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scrum-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E570BFB31EF2435D00C7B070 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +120,14 @@
 				E548CA871EFA3A74006DBC77 /* SuggestionController.swift */,
 			);
 			name = Suggestion;
+			sourceTree = "<group>";
+		};
+		E548CA9A1F00F61E006DBC77 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				E548CA921EFB6275006DBC77 /* ShareController.swift */,
+			);
+			name = Share;
 			sourceTree = "<group>";
 		};
 		E5623C8D1EF3AB610014319B /* maven */ = {
@@ -204,7 +202,6 @@
 				E5623D111EF3B2A80014319B /* Cell */,
 				E5623D101EF3B29F0014319B /* ValueObject */,
 				E5623C8D1EF3AB610014319B /* maven */,
-				E570BFF11EF24EC800C7B070 /* icons */,
 				E570BFDA1EF243D100C7B070 /* Controller */,
 				E570BFB31EF2435D00C7B070 /* AppDelegate.swift */,
 				E570BFB51EF2435D00C7B070 /* ViewController.swift */,
@@ -219,6 +216,7 @@
 		E570BFDA1EF243D100C7B070 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E548CA9A1F00F61E006DBC77 /* Share */,
 				E548CA991EFEBEF5006DBC77 /* Suggestion */,
 				E548CA911EFA5E89006DBC77 /* EverybodyToday */,
 				E570BFDB1EF243DC00C7B070 /* LoginController.swift */,
@@ -226,21 +224,8 @@
 				E548CA891EFA3A90006DBC77 /* MyPageController.swift */,
 				E548CA8B1EFA3AA7006DBC77 /* MyPlanController.swift */,
 				E548CA8D1EFA4960006DBC77 /* TabBarController.swift */,
-				E548CA921EFB6275006DBC77 /* ShareController.swift */,
 			);
 			name = Controller;
-			sourceTree = "<group>";
-		};
-		E570BFF11EF24EC800C7B070 /* icons */ = {
-			isa = PBXGroup;
-			children = (
-				E5623D161EF3BA330014319B /* icons8-Response@3x.png */,
-				E5623D081EF3AE630014319B /* icons8-Calendar@3x.png */,
-				E5623D091EF3AE630014319B /* icons8-Pencil@3x.png */,
-				E5623D0A1EF3AE630014319B /* icons8-Topic Moved@3x.png */,
-				E5623D0B1EF3AE630014319B /* icons8-User@3x.png */,
-			);
-			name = icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,13 +294,8 @@
 			files = (
 				E570BFBE1EF2435D00C7B070 /* LaunchScreen.storyboard in Resources */,
 				E570BFBB1EF2435D00C7B070 /* Assets.xcassets in Resources */,
-				E5623D0F1EF3AE630014319B /* icons8-User@3x.png in Resources */,
-				E5623D171EF3BA330014319B /* icons8-Response@3x.png in Resources */,
-				E5623D0D1EF3AE630014319B /* icons8-Pencil@3x.png in Resources */,
 				E570BFC61EF243AC00C7B070 /* Main.storyboard in Resources */,
 				E5623CE41EF3AB610014319B /* Contents.json in Resources */,
-				E5623D0E1EF3AE630014319B /* icons8-Topic Moved@3x.png in Resources */,
-				E5623D0C1EF3AE630014319B /* icons8-Calendar@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
