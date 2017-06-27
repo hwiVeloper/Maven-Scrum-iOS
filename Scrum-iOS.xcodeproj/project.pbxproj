@@ -34,6 +34,9 @@
 		E570BFC61EF243AC00C7B070 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E570BFC51EF243AC00C7B070 /* Main.storyboard */; };
 		E570BFDD1EF243DC00C7B070 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570BFDB1EF243DC00C7B070 /* LoginController.swift */; };
 		E570BFDE1EF243DC00C7B070 /* DashboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570BFDC1EF243DC00C7B070 /* DashboardController.swift */; };
+		E5886FF71F021FC80040E138 /* ShareDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5886FF61F021FC80040E138 /* ShareDetailController.swift */; };
+		E59821681F01EF86009FF9F0 /* ShareVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59821671F01EF86009FF9F0 /* ShareVO.swift */; };
+		E598216A1F01EFA8009FF9F0 /* ShareCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59821691F01EFA8009FF9F0 /* ShareCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +73,9 @@
 		E570BFC51EF243AC00C7B070 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E570BFDB1EF243DC00C7B070 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		E570BFDC1EF243DC00C7B070 /* DashboardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardController.swift; sourceTree = "<group>"; };
+		E5886FF61F021FC80040E138 /* ShareDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareDetailController.swift; sourceTree = "<group>"; };
+		E59821671F01EF86009FF9F0 /* ShareVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareVO.swift; sourceTree = "<group>"; };
+		E59821691F01EFA8009FF9F0 /* ShareCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				E548CA921EFB6275006DBC77 /* ShareController.swift */,
+				E5886FF61F021FC80040E138 /* ShareDetailController.swift */,
 			);
 			name = Share;
 			sourceTree = "<group>";
@@ -162,6 +169,7 @@
 				E548CA7B1EF8F360006DBC77 /* PlanDetailVO.swift */,
 				E548CA7D1EF8F412006DBC77 /* ReplyVO.swift */,
 				E548CA941EFCFA64006DBC77 /* SuggestionVO.swift */,
+				E59821671F01EF86009FF9F0 /* ShareVO.swift */,
 			);
 			name = ValueObject;
 			sourceTree = "<group>";
@@ -173,6 +181,7 @@
 				E548CA7F1EF8FCD8006DBC77 /* PlanDetailCell.swift */,
 				E548CA811EF90D22006DBC77 /* ReplyCell.swift */,
 				E548CA961EFCFA7F006DBC77 /* SuggestionCell.swift */,
+				E59821691F01EFA8009FF9F0 /* ShareCell.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -354,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E59821681F01EF86009FF9F0 /* ShareVO.swift in Sources */,
 				E570BFDE1EF243DC00C7B070 /* DashboardController.swift in Sources */,
 				E570BFB61EF2435D00C7B070 /* ViewController.swift in Sources */,
 				E548CA861EFA3863006DBC77 /* TodayController.swift in Sources */,
@@ -362,12 +372,14 @@
 				E5623D151EF3B2BD0014319B /* PlanVO.swift in Sources */,
 				E548CA7E1EF8F412006DBC77 /* ReplyVO.swift in Sources */,
 				E548CA8E1EFA4960006DBC77 /* TabBarController.swift in Sources */,
+				E598216A1F01EFA8009FF9F0 /* ShareCell.swift in Sources */,
 				E548CA8C1EFA3AA7006DBC77 /* MyPlanController.swift in Sources */,
 				E548CA901EFA5E7E006DBC77 /* ReplyController.swift in Sources */,
 				E5623D141EF3B2BD0014319B /* PlanCell.swift in Sources */,
 				E548CA951EFCFA64006DBC77 /* SuggestionVO.swift in Sources */,
 				E548CA7C1EF8F360006DBC77 /* PlanDetailVO.swift in Sources */,
 				E570BFDD1EF243DC00C7B070 /* LoginController.swift in Sources */,
+				E5886FF71F021FC80040E138 /* ShareDetailController.swift in Sources */,
 				E548CA8A1EFA3A90006DBC77 /* MyPageController.swift in Sources */,
 				E570BFB41EF2435D00C7B070 /* AppDelegate.swift in Sources */,
 				E548CA931EFB6275006DBC77 /* ShareController.swift in Sources */,

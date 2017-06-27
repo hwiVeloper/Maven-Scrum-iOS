@@ -1,5 +1,6 @@
 PODS:
   - ActionSheetPicker-3.0 (2.2.0)
+  - Down (0.3.4)
   - FontAwesomeKit/Core (2.2.1)
   - FontAwesomeKit/FontAwesome (2.2.1):
     - FontAwesomeKit/Core
@@ -7,14 +8,16 @@ PODS:
 
 DEPENDENCIES:
   - ActionSheetPicker-3.0
+  - Down
   - FontAwesomeKit/FontAwesome (~> 2.2.0)
   - ReachabilitySwift (~> 3)
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
+  Down: 3f35b61e51a603df3e9e7e0289b15752e72f82e6
   FontAwesomeKit: 3614979b3dbb0ec3f7fac1bd760b91f66c31db67
   ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
 
-PODFILE CHECKSUM: 31d8f7736837a488525228697e6209723c4b821a
+PODFILE CHECKSUM: da3dbc954f85ff305188afa7d5fc59de36d4c851
 
 COCOAPODS: 1.2.1

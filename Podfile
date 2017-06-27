@@ -10,5 +10,6 @@ target 'Scrum-iOS' do
   pod 'ActionSheetPicker-3.0'
   pod 'FontAwesomeKit/FontAwesome', '~> 2.2.0'
   pod 'ReachabilitySwift', '~> 3'
+  pod 'Down'
 
 end

@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -254,13 +255,34 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="shareList" id="85D-Mp-ELj">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="shareList" textLabel="nTh-ai-8vc" detailTextLabel="96x-In-tTa" style="IBUITableViewCellStyleSubtitle" id="85D-Mp-ELj" customClass="ShareCell" customModule="Scrum_iOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="85D-Mp-ELj" id="0ct-iY-vMC">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nTh-ai-8vc">
+                                            <rect key="frame" x="15" y="5" width="29.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="96x-In-tTa">
+                                            <rect key="frame" x="15" y="25.5" width="21" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="forumTitle" destination="96x-In-tTa" id="KVz-Mi-hhM"/>
+                                    <outlet property="userName" destination="nTh-ai-8vc" id="Lp3-Dq-ODu"/>
+                                    <segue destination="rZD-4X-4tT" kind="show" identifier="segueDetail" id="sxE-1A-JfT"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -273,12 +295,37 @@
                     </navigationItem>
                     <connections>
                         <outlet property="btnSelectSeq" destination="jba-Xy-99U" id="rS2-n3-3Hz"/>
-                        <outlet property="selectedSeq" destination="J2z-ty-aZ7" id="qNF-Ic-JvF"/>
+                        <outlet property="selectedSeqLabel" destination="J2z-ty-aZ7" id="Grc-jU-Wxa"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZAI-Da-FcT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1364" y="1075.4122938530736"/>
+        </scene>
+        <!--나눔의 장-->
+        <scene sceneID="Qcy-BQ-Y4Q">
+            <objects>
+                <viewController id="rZD-4X-4tT" customClass="ShareDetailController" customModule="Scrum_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <webView key="view" contentMode="scaleToFill" id="uJZ-8b-2Ve">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </webView>
+                    <navigationItem key="navigationItem" title="나눔의 장" id="Xsk-34-3ie">
+                        <rightBarButtonItems>
+                            <barButtonItem title="삭제" id="uzo-tP-YIA"/>
+                            <barButtonItem title="수정" id="lTC-qs-Ryl"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnDelete" destination="uzo-tP-YIA" id="CGN-BE-6nr"/>
+                        <outlet property="btnEdit" destination="lTC-qs-Ryl" id="ppv-Lr-Udi"/>
+                        <outlet property="markdownView" destination="uJZ-8b-2Ve" id="dGw-gH-ULw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x4Z-M5-Nag" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1364" y="1800"/>
         </scene>
         <!--나눔의장-->
         <scene sceneID="xnA-hx-qHu">
