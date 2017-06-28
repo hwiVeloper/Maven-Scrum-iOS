@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		75A1FC1970AEC65EA37DB3AD /* Pods_Scrum_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514082956F36370E4E484971 /* Pods_Scrum_iOS.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		E53B9EBA1EF261F00049378D /* LoadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53B9EB91EF261F00049378D /* LoadController.swift */; };
+		E54152591F036C9E00241151 /* MyPlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54152581F036C9D00241151 /* MyPlanCell.swift */; };
 		E548CA7C1EF8F360006DBC77 /* PlanDetailVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E548CA7B1EF8F360006DBC77 /* PlanDetailVO.swift */; };
 		E548CA7E1EF8F412006DBC77 /* ReplyVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E548CA7D1EF8F412006DBC77 /* ReplyVO.swift */; };
 		E548CA801EF8FCD8006DBC77 /* PlanDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E548CA7F1EF8FCD8006DBC77 /* PlanDetailCell.swift */; };
@@ -46,6 +47,7 @@
 		E524816E1EF791EF0034EAF3 /* Scrum-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Scrum-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		E52481751EF792320034EAF3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E53B9EB91EF261F00049378D /* LoadController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadController.swift; sourceTree = "<group>"; };
+		E54152581F036C9D00241151 /* MyPlanCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPlanCell.swift; sourceTree = "<group>"; };
 		E548CA7B1EF8F360006DBC77 /* PlanDetailVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanDetailVO.swift; sourceTree = "<group>"; };
 		E548CA7D1EF8F412006DBC77 /* ReplyVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyVO.swift; sourceTree = "<group>"; };
 		E548CA7F1EF8FCD8006DBC77 /* PlanDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanDetailCell.swift; sourceTree = "<group>"; };
@@ -107,6 +109,22 @@
 				457348356861AA87F1CB2137 /* Pods-Scrum-iOS.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E54152561F034C4A00241151 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				E548CA891EFA3A90006DBC77 /* MyPageController.swift */,
+			);
+			name = MyPage;
+			sourceTree = "<group>";
+		};
+		E54152571F034C5E00241151 /* MyPlan */ = {
+			isa = PBXGroup;
+			children = (
+				E548CA8B1EFA3AA7006DBC77 /* MyPlanController.swift */,
+			);
+			name = MyPlan;
 			sourceTree = "<group>";
 		};
 		E548CA911EFA5E89006DBC77 /* EverybodyToday */ = {
@@ -182,6 +200,7 @@
 				E548CA811EF90D22006DBC77 /* ReplyCell.swift */,
 				E548CA961EFCFA7F006DBC77 /* SuggestionCell.swift */,
 				E59821691F01EFA8009FF9F0 /* ShareCell.swift */,
+				E54152581F036C9D00241151 /* MyPlanCell.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -225,13 +244,13 @@
 		E570BFDA1EF243D100C7B070 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E54152571F034C5E00241151 /* MyPlan */,
+				E54152561F034C4A00241151 /* MyPage */,
 				E548CA9A1F00F61E006DBC77 /* Share */,
 				E548CA991EFEBEF5006DBC77 /* Suggestion */,
 				E548CA911EFA5E89006DBC77 /* EverybodyToday */,
 				E570BFDB1EF243DC00C7B070 /* LoginController.swift */,
 				E53B9EB91EF261F00049378D /* LoadController.swift */,
-				E548CA891EFA3A90006DBC77 /* MyPageController.swift */,
-				E548CA8B1EFA3AA7006DBC77 /* MyPlanController.swift */,
 				E548CA8D1EFA4960006DBC77 /* TabBarController.swift */,
 			);
 			name = Controller;
@@ -374,6 +393,7 @@
 				E548CA8E1EFA4960006DBC77 /* TabBarController.swift in Sources */,
 				E598216A1F01EFA8009FF9F0 /* ShareCell.swift in Sources */,
 				E548CA8C1EFA3AA7006DBC77 /* MyPlanController.swift in Sources */,
+				E54152591F036C9E00241151 /* MyPlanCell.swift in Sources */,
 				E548CA901EFA5E7E006DBC77 /* ReplyController.swift in Sources */,
 				E5623D141EF3B2BD0014319B /* PlanCell.swift in Sources */,
 				E548CA951EFCFA64006DBC77 /* SuggestionVO.swift in Sources */,

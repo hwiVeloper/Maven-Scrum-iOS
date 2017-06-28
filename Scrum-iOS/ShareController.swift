@@ -14,7 +14,7 @@ class ShareController : UITableViewController {
     @IBOutlet var selectedSeqLabel: UILabel!
     @IBOutlet var btnSelectSeq: UIButton!
     
-    var selectSeq : Int = 3
+    var selectSeq : Int = 4
     
     lazy var sList : [ShareVO] = {
         var datalist = [ShareVO]()
@@ -37,9 +37,9 @@ class ShareController : UITableViewController {
     
     @IBAction func seqPicker(_ sender: UIButton) {
         let acp = ActionSheetMultipleStringPicker(title: "회차선택", rows: [
-                ["1", "2", "3"],
+                ["1", "2", "3", "4"],
                 ["회"]
-            ], initialSelection: [2, 0], doneBlock: { // 마지막 회차로 고정
+            ], initialSelection: [3, 0], doneBlock: { // 마지막 회차로 고정
                 picker, values, indexes in
                 
                 self.selectedSeqLabel.text = "\((indexes as! NSArray)[0]) 회"

@@ -14,6 +14,7 @@ class ShareDetailController : UIViewController {
     var sdvo : ShareVO!
     
     @IBOutlet var markdownView: UIWebView!
+    
     @IBOutlet var btnEdit: UIBarButtonItem!
     @IBOutlet var btnDelete: UIBarButtonItem!
     
@@ -30,5 +31,9 @@ class ShareDetailController : UIViewController {
         let downView = Down(markdownString: sdvo.forumContent!)
         let htmlView = try? downView.toHTML()
         markdownView.loadHTMLString(htmlView!, baseURL: nil)
+//        let downView = try? DownView(frame: self.view.bounds, markdownString: "**Oh Hai**") {
+//        }
+//        NSLog("\(downView!)")
+//        downView?.loadHTMLString(sdvo.forumContent!, baseURL: nil)
     }
 }
